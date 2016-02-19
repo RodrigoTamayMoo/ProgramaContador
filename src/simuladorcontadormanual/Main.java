@@ -5,6 +5,7 @@
 package simuladorcontadormanual;
 
 import contadormanual.ContadorManual;
+import gui.MainForm;
 
 /**
  *
@@ -17,6 +18,9 @@ public class Main {
      */
     public static void main(String[] args) {
         ContadorManual contadorDePasajeros = new ContadorManual();
+        
+        MainForm Objetos = new MainForm();
+        Objetos.setVisible(true);
         
         System.out.println("Número de pasajeros: " + contadorDePasajeros.getConteoActual());
         contadorDePasajeros.contar();
